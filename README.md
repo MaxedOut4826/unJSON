@@ -1,7 +1,7 @@
 # unJSON
 unJSON is a utility which takes formatted JSON files and returns flattened, unformatted versions, excluding spaces and indentations outside of strings. 
 
-This tool was originally created for the Minecraft: Bedrock Edition commands development community, where rawtext JSON in commands should be unformatted at runtime.
+This tool was originally created for the Minecraft: Bedrock Edition commands community, where rawtext JSON in commands should be unformatted at runtime.
 
 # How To Install
 Simply run this command in the terminal:
