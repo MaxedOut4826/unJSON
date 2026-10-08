@@ -1,20 +1,33 @@
 {
-  "name": "json-unformatter",
+  "name": "@maxedout4826/unjson",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "watch": "node bin/unjson.js watch"
-  },
+  "description": "A JSON unformatter primarily targeted at the Minecraft: Bedrock Edition commands community to quickly format & unformat rawtext.",
+  "type": "module",
   "bin": {
-    "unjson": "./bin/unjson.js"
+    "unjson": "src/unjson.js"
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "watch": "node src/unjson.js watch"
+  },
+  "keywords": [
+    "json",
+    "minecraft",
+    "bedrock",
+    "rawtext",
+    "cli"
+  ],
+  "author": "MaxedOut4826",
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^26.6.4",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
     "chokidar": "^5.0.0"
   },
-  "type": "module"
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src"
+  ]
 }

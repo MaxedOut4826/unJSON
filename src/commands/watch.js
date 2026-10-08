@@ -1,8 +1,8 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { watch } from "chokidar";
 import { dirname, join, relative, resolve } from "node:path";
-import { log } from "../../common/log.js";
-import { Colour } from "../../common/colours.js";
+import { log } from "../common/log.js";
+import { Colour } from "../common/colours.js";
 
 const UNJSON_ROOT_DIRECTORY = "unjson";
 const SOURCE_DIRECTORY = resolve(UNJSON_ROOT_DIRECTORY, "input");
@@ -34,7 +34,7 @@ function unformatJSON(inputPath) {
         writeFileSync(outputPath, JSON.stringify(data));
 
         log(
-            `Unformatted ${relative(OUTPUT_DIRECTORY, inputPath)} → ${relative(SOURCE_DIRECTORY, outputPath)}`,
+            `Unformatted ${relative(SOURCE_DIRECTORY, inputPath)} → ${relative(OUTPUT_DIRECTORY, outputPath)}`,
             Colour.green,
         );
     } catch {}

@@ -2,8 +2,8 @@
 
 // Small scale commands handler because I don't have many commands
 
-import { Colour } from "../common/colours.js";
-import { log } from "../common/log.js";
+import { Colour } from "./common/colours.js";
+import { log } from "./common/log.js";
 
 const COMMANDS_HELP_PAGE = `unJSON [v1.0.0]
 By MaxedOut4826
@@ -22,7 +22,7 @@ if (!command) {
 } else {
     switch (command) {
         case "watch":
-            await import("../src/commands/watch.js");
+            await import("./commands/watch.js");
             break;
         case "help":
             log(COMMANDS_HELP_PAGE, Colour.cyan);
@@ -32,5 +32,6 @@ if (!command) {
                 "Invalid command; try 'unjson help' to display a full commands list",
                 Colour.red,
             );
+            process.exitCode = 1;
     }
 }

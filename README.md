@@ -6,8 +6,9 @@ This tool was originally created for the Minecraft: Bedrock Edition commands dev
 # How To Install
 Simply run this command in the terminal:
 ```bat
-npm i -g @maxedout4826/unjson
+npm install -g @maxedout4826/unjson
 ```
+Requires Node.js 20.19.0 or newer.
 
 # How To Use
 Run this command once in the project root to begin watching for file changes:
