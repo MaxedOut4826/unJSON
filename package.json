@@ -1,6 +1,6 @@
 {
   "name": "@maxedout4826/unjson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JSON unformatter primarily targeted at the Minecraft: Bedrock Edition commands community to quickly format & unformat rawtext.",
   "type": "module",
   "bin": {
