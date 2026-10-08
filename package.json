@@ -1,0 +1,20 @@
+{
+  "name": "json-unformatter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node bin/unjson.js watch"
+  },
+  "bin": {
+    "unjson": "./bin/unjson.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "chokidar": "^5.0.0"
+  },
+  "type": "module"
+}
